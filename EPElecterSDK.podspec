@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "EPElecterSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "EPElecterSDK can be used now ."
 
   # This description is used to generate tags and improve search results.
@@ -26,6 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
                       0.0.1 has been used now, welcome join us.
+                      0.0.2 has been used now, welcome join us.
                    DESC
 
   spec.homepage     = "https://github.com/joycelee720/EPElecterSDK"
@@ -89,11 +90,11 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "**/*"
+  # spec.source_files  = "**/*"
   spec.exclude_files = "EPElecterSDK.podspec", "LICENSE"
 
   # spec.public_header_files = "Classes/**/*.h"
-
+  spec.vendored_frameworks = 'EPElecter.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -104,7 +105,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resources = "*.{bundle}"
+  spec.resources = "EBundle.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -116,7 +117,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "Foundation", "AnotherFramework"
+  spec.frameworks = "Foundation", "UIKit"
   spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
 
   # spec.library   = "iconv"

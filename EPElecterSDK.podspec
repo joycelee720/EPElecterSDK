@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "EPElecterSDK"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "EPElecterSDK can be used now ."
 
   # This description is used to generate tags and improve search results.
@@ -27,6 +27,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                       0.0.1 has been used now, welcome join us.
                       0.0.2 has been used now, welcome join us.
+                      0.0.3 has been used now, welcome join us.
                    DESC
 
   spec.homepage     = "https://github.com/joycelee720/EPElecterSDK"
@@ -91,10 +92,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "**/*"
-  spec.exclude_files = "EPElecterSDK.podspec", "LICENSE"
+  spec.exclude_files = "EPElecterSDK.podspec", "LICENSE", "README.md"
 
   # spec.public_header_files = "Classes/**/*.h"
-  spec.vendored_frameworks = 'EPElecter.framework'
+  spec.vendored_frameworks = 'Jpoinue.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -105,7 +106,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resources = "EBundle.bundle"
+  spec.resources = "Jpoinue.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

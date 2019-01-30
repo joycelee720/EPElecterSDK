@@ -1,0 +1,6 @@
+framework module Jpoinue {
+  umbrella header "Jpoinue.h"
+
+  export *
+  module * { export * }
+}
